@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int i = 42;          // Initialize a simple integer variable
+    int *j = &i;       // Initialize a pointer 
+    printf("address of i=%d",&i);
+    printf("\naddress of i=%d",j);
+    printf("\nvalue of i=%d",i);
+    printf("\nvalue of i=%d",*(&i));
+    printf("\nvalue of i=%d",*j);
+ 
+
+    return 0;
+}
