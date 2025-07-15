@@ -1,0 +1,27 @@
+
+//grade 
+int marks;
+
+
+void grade(int marks){
+    if(marks>100|| marks<0){
+        printf("please enter valid marks!");
+    }
+    else if(marks>=90){
+        printf("result:first class");
+    }
+    else if(70<=marks<90){
+        printf("result:second class");
+    }
+    else if(50<=marks<70){
+        printf("result:third class");
+    }
+    else{
+        printf("result:fail");
+    }
+}
+int main(){
+    printf("enter marks: ");
+    scanf("%d",&marks);
+    grade(marks);
+}
