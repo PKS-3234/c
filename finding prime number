@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+bool find_prime_no(int n){
+if (n<=1) return false;
+for(int i=2;i<=n/2;i++)
+{
+  if (n%i==0) return false;
+}
+return true;
+}
+
+int main(){
+int a;
+printf("enter a number: ");
+scanf("%d",&a);
+bool res=find_prime_no(a);
+if (res==true) {
+printf("is a prime number");
+}
+else{
+printf("is not a prime number");
+}
