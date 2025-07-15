@@ -1,0 +1,72 @@
+//1.with datatype and with args
+int sum(int a, int b);
+
+int main() {
+    int x, y;
+    printf("Enter two integers: ");
+    scanf("%d %d", &x, &y);
+
+    int d = sum(x, y);
+    printf("Sum of %d and %d is %d\n", x, y, d);
+
+    return 0;
+}
+
+int sum(int a, int b) {
+    int c = a + b;
+    return c;
+}
+
+
+
+
+
+// 2.without datatype and args
+void sum();
+int main(){
+    
+    sum();
+}
+void sum(){
+    int a,b;
+    printf("enter 2 numbers: ");
+    scanf("%d %d", &a, &b);
+    int c=a+b;
+    printf("sum of %d and %d is %d",a,b,c);
+}
+
+
+
+
+//with return type and without args
+
+int x, y; // global variables
+
+int sum() {
+    printf("Enter 2 numbers: ");
+    scanf("%d %d", &x, &y);
+    return x + y;
+}
+
+int main() {
+    int z = sum();
+    printf("Sum of %d and %d is %d\n", x, y, z);
+    return 0;
+}
+
+
+
+
+
+// without return type and with args
+int a,b;
+ void sum(int a,int b)
+{
+    int c=a+b;
+    printf("sum of %d and %d is %d",a,b,c);
+}
+int main(){
+   printf("enter 2 numbers  ");
+   scanf("%d %d", &a,&b); 
+   sum(a,b);
+}
