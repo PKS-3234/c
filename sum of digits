@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int number, sum = 0;
+
+    printf("Enter a 5-digit number: ");
+    scanf("%d", &number);
+
+    // Check if the number is actually a 5-digit number
+    if (number < 10000 || number > 99999) {
+        printf("Invalid input! Please enter a 5-digit number.\n");
+        return 1;
+    }
+
+    while (number != 0) {
+        sum += number % 10;  // Add the last digit to sum
+        number = number / 10; // Remove the last digit
+    }
+
+    printf("Sum of digits: %d\n", sum);
+
+    return 0;
+}
